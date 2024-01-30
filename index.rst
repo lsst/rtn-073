@@ -2,8 +2,6 @@
 Rules of Engagement for Accessing Data During the Embargo Period
 ################################################################
 
-Abstract
-========
 
 .. abstract::
 
