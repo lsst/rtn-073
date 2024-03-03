@@ -27,3 +27,8 @@ Post-Embargo
 Selected datasets, including both raw and prompt-processed, will be copied from the embargo rack/repo to normal storage and ingested into staff and public Butler repos once the embargo period is over.  User-generated datasets can be copied as well at this time if arrangements are made to include them in the configuration.  Those datasets that are to be released will be made available to the US DAC to be viewed by anyone with data rights.  Raw images will be registered in Rucio for transmission to FrDF and UKDF.
 
 Removal from the embargo repo can occur after a successful copy to normal storage, or it can be postponed for a configurable time period, but space limitations mean that no dataset should be expected to be retained for more than 30 days in the embargo repo.
+
+Handling of OUO Satellite Catalog
+=================================
+
+The catalog will be treated as CUI Basic, per DOE Order 471.7. As such, access will be restricted to authorized individuals, identified in an approved acccess list and allowed access to the catalog via permissions set on a directory in the emabargo rack filesystem. The catalogs may not leave that directory, except for transient copies needed by prompt/alert processing.
