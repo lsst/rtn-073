@@ -11,7 +11,7 @@ Embargo Restrictions:
 =====================
 
 Embargoed data types cannot leave the USDF during the embargo period. 
-All Rubin USDF account holders will have full access to data in the embargo rack (unless their Rubin role requires them to only hold standard LSST User permissions, as may be the case for some Rubin Community Scientists). 
+All Rubin USDF account holders will have full access to data in the embargo rack (unless their Rubin role requires them to only hold standard LSST User permissions, as may be the case for some Rubin Community Scientists, for example). 
 Any data can reside transiently on batch or kubernetes processing nodes but must be deleted after use.
 
 Access to the embargo rack will be enforced with permissions.
