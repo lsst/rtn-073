@@ -7,10 +7,14 @@ Rules of Engagement for Accessing Data During the Embargo Period
 
    Data must be embargoed after arriving at the USDF - for 30 days in commissioning and 80 hrs in Survey Operations. Alert Processing will not record vetoed streaks. What rules will we impose on accessing data during that period?
 
-Embargo Restrictions:
-=====================
+Embargo Restrictions
+====================
 
-Embargoed data types cannot leave the USDF during the embargo period. All Rubin USDF account holders will have full access to data in the embargo rack. Any data can reside transiently on batch or kubernetes processing nodes but must be deleted after use.
+Embargoed data types cannot leave the USDF during the embargo period.
+LSST Users, including those who have been granted USDF accounts via the Resource Allocation Process, will not have access to the data in the embargo rack.
+Rubin Observatory staff (including the Commissioning Team) will have full access to the data in the embargo rack as their Rubin roles require. 
+(Some Rubin roles require only LSST User permissions). 
+Any data can reside transiently on batch or kubernetes processing nodes but must be deleted after use.
 
 Access to the embargo rack will be enforced with permissions.
 
@@ -28,7 +32,9 @@ Selected datasets, including both raw and prompt-processed, will be copied from 
 
 Removal from the embargo repo can occur after a successful copy to normal storage, or it can be postponed for a configurable time period, but space limitations mean that no dataset should be expected to be retained for more than 30 days in the embargo repo.
 
-Handling of OUO Satellite Catalog
+Handling of the Satellite Catalog
 =================================
 
-The catalog will be treated as CUI Basic, per DOE Order 471.7. As such, access will be restricted to authorized individuals, identified in an approved acccess list and allowed access to the catalog via permissions set on a directory in the emabargo rack filesystem. The catalogs may not leave that directory, except for transient copies needed by prompt/alert processing.
+The catalog, as per DOE Order 471.7  will be restricted to authorized individuals, identified in an approved access list and allowed access to the catalog via permissions set on a directory in the embargo rack filesystem. 
+The catalogs may not leave that directory, except for transient copies needed by prompt/alert processing. 
+No derivative catalogs may be stored.
