@@ -35,6 +35,6 @@ Removal from the embargo repo can occur after a successful copy to normal storag
 Handling of the Satellite Catalog
 =================================
 
-The catalog will be treated as CUI Basic, per DOE Order 471.7. As such, access will be restricted to authorized individuals, identified in an approved acccess list and allowed access to the catalog via permissions set on a directory in the embargo rack filesystem. 
+The catalog, as per DOE Order 471.7  will be restricted to authorized individuals, identified in an approved access list and allowed access to the catalog via permissions set on a directory in the embargo rack filesystem. 
 The catalogs may not leave that directory, except for transient copies needed by prompt/alert processing. 
 No derivative catalogs may be stored.
