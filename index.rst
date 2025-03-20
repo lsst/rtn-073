@@ -5,25 +5,26 @@ Rules of Engagement for Accessing Data During the Embargo Period
 
 .. abstract::
 
-   Data must be embargoed after arriving at the USDF - for 30 days in commissioning and 80 hrs in Survey Operations. Alert Processing will not record vetoed streaks. What rules will we impose on accessing data during that period?
+Data must be embargoed after arriving at the USDF - for 30 days in
+Commissioning prior to First Look and 80 hours thereafter.  What rules will we impose on accessing data during that period?
 
 Embargo Restrictions
 ====================
 
-Embargoed data types cannot leave the USDF during the embargo period.
-LSST Users, including those who have been granted USDF accounts via the Resource Allocation Process, will not have access to the data in the embargo rack.
+Embargoed data types containing pixels are stored in the embargo rack during the embargo period.
+LSST Users, including those who have been granted USDF accounts for "User Batch" processing via the Resource Allocation Process, will not have access to the data in the embargo rack.
 Rubin Observatory staff (including the Commissioning Team) will have full access to the data in the embargo rack as their Rubin roles require. 
 (Some Rubin roles require only LSST User permissions). 
-Any data can reside transiently on batch or kubernetes processing nodes but must be deleted after use.
+Limited amounts of Embargoed data can reside transiently outside the embargo rack on batch or Kubernetes processing nodes or personal/work laptops/desktops or USDF home/shared/scratch directories but must be deleted after use.
 
-Access to the embargo rack will be enforced with permissions.
+Access to the embargo rack will be enforced via control of the relevant read credentials.
 
 All user-generated data products derived from the embargo repo should be written back to the embargo repo.  While catalogs can theoretically be exported, it is simpler to just keep everything there.
 
 Exempted Data types
 ===================
 
-Derived calibrations, which are not generated from sky pixels, can be exported from the embargo repo as needed.
+Derived calibrations, which are not generated from sky pixels, can be exported from the embargo rack as needed.
 
 Post-Embargo
 ============
@@ -35,6 +36,7 @@ Removal from the embargo repo can occur after a successful copy to normal storag
 Handling of the Satellite Catalog
 =================================
 
-The catalog, as per DOE Order 471.7  will be restricted to authorized individuals, identified in an approved access list and allowed access to the catalog via permissions set on a directory in the embargo rack filesystem. 
-The catalogs may not leave that directory, except for transient copies needed by prompt/alert processing. 
-No derivative catalogs may be stored.
+The catalog and the credentials to retrieve new versions of it, as per DOE Order 471.7, will be restricted to authorized individuals, identified in an approved access list.
+The catalog will reside in the memory of the Satellite Catalog Service and will not be persisted to non-volatile storage.
+The access credentials will be encrypted at rest at all times.
+No derivative catalogs will be stored.
