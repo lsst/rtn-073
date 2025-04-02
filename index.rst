@@ -6,7 +6,7 @@ Rules of Engagement for Accessing Data During the Embargo Period
 .. abstract::
 
 Data must be embargoed after arriving at the USDF - for 30 days in
-Commissioning prior to First Look and 80 hours thereafter.  What rules will we impose on accessing data during that period?
+Commissioning prior to System First Light, and 80 hours thereafter.  What rules will we impose on accessing data during that period?
 
 Embargo Restrictions
 ====================
